@@ -1,0 +1,20 @@
+{
+  "name": "sms-translation-azure-js",
+  "version": "1.0.0",
+  "description": "Translation for SMS messages using Azure Translator Text",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "contributors": [
+    "Kelly Andrews <kelly.andrews@nexmo.com> (http://www.twitter.com/kellyjandrews)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@azure/cognitiveservices-translatortext": "^1.0.0",
+    "@azure/ms-rest-js": "2.0.4",
+    "body-parser": "1.18.3",
+    "dotenv": "6.2.0",
+    "express": "4.16.4"
+  }
+}

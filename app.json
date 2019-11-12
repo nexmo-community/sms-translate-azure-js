@@ -1,0 +1,13 @@
+{
+  "name": "SMS Translation with Nexmo & Azure Translator Text",
+  "description": "Example using Azure Translator Text to translate SMS messages.",
+  "keywords": ["translator", "sms", "nodejs", "Azure Translator Text", "nexmo"],
+  "repository": "https://github.com/nexmo-community/sms-translation-azure-js",
+  "env": {
+    "TEXT_TRANSLATION_SUBSCRIPTION_KEY": {
+      "description": "The Subscritption Key from Azure Translator Text"
+    },
+    "TEXT_TRANSLATION_ENDPOINT": {
+      "description": "The endpoint from Azure Text Translator",
+    }
+  }
