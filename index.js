@@ -42,13 +42,13 @@ app.route('/message')
 
 function translateText(params) {
   const creds = new CognitiveServicesCredentials.ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': process.env.TEXT_TRANSLATION_SUBSCRIPTION_KEY } });
-  const client = new TranslatorTextClient(creds, "https://api.cognitive.microsofttranslator.com/");
+  const client = new TranslatorTextClient(creds, process.env.TEXT_TRANSLATION_ENDPOINT);
 
   client.translator
     .translate(["en"], [{text:params.text}])
     .then(result => {
-      console.log(params.text);
-      console.dir(result, {depth: null})
+      console.log(`Original Text ${params.text}`);
+      console.log(`Translation ${result[0].translations[0].text}`)
     })
     .catch(err => {
       console.error("error:", err);
